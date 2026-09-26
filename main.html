@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Netflix</title>
+    <link rel="shortcut icon" href="assets/nficon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DA PÁGINA (HEADER / NAVEGAÇÃO) -->
+    <header class="header">
+        
+        <!-- Div Lado Esquerdo: Logo e Links de Navegação -->
+        <div class="nav-esquerda">
+            <div class="logo">
+                <img src="assets/LogoNetfrix.png" alt="Logo Netflix">
+            </div>
+            
+            <!-- Menu de navegação principal -->
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="#" class="ativo">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha Netflix</a></li>
+                    <li><a href="#">Navegar por idiomas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Div Lado Direito: Ícones e Perfis de Usuário -->
+        <div class="nav-direita">
+            <!-- Div Ícone da Lupa (Busca) -->
+            <div class="icone-item" title="Buscar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <!-- Div Ícone do Sino (Notificações) -->
+            <div class="icone-item" title="Notificações">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </div>
+
+            <div class="perfil-item">
+                <img src="assets/infantill.png" alt="Perfil Infantil" class="avatar-img">
+                <span class="perfil-nome">Infantil</span>
+            </div>
+
+            <div class="perfil-item">
+                <img src="assets/perfil.png" alt="Perfil Usuário" class="avatar-img">
+                <span class="seta-dropdown">▼</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE (MAIN) -->
+    <main class="conteudo-principal">
+
+        <!-- SEÇÃO HERO (Destaque Principal da Série) -->
+        <section class="hero-destaque">
+            
+            <!-- Div com a imagem de fundo da série -->
+            <!-- Nota: Deve aparecer somente se o tamanho da tela for ao menos de um tablet (>= 768px) -->
+            <div class="container-imagem-hero">
+                <img src="assets/hero.jpg" alt="Banner Breaking Bad" class="imagem-hero">
+                <div class="overlay-sombra"></div>
+            </div>
+
+            <!-- Div com o conteúdo / informações da série sobreposta ao banner -->
+            <div class="info-serie-destaque">
+                
+                <!-- Div com o Logo/Título da Série -->
+                <div class="logo-serie">
+                    <div class="bb-logo">
+                        <div class="bb-linha">
+                            <span class="bb-quadrado"><small>35</small>Br</span><span class="bb-texto">eaking</span>
+                        </div>
+                        <div class="bb-linha">
+                            <span class="bb-quadrado"><small>56</small>Ba</span><span class="bb-texto">d</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Div com os Detalhes da Série (Gênero, Ano, Temporadas, Idade) -->
+                <div class="detalhes-serie">
+                    <span>Série</span>
+                    <span class="ponto">•</span>
+                    <span>Drama</span>
+                    <span class="ponto">•</span>
+                    <span>2008</span>
+                    <span class="ponto">•</span>
+                    <span>5 temporadas</span>
+                    <span class="classificacao-idade">16</span>
+                </div>
+
+                <!-- Div / Parágrafo com a Sinopse -->
+                <p class="sinopse-serie">
+                    Esta série policial que marcou época deu origem a uma premiada prequel (Better Call Saul) e a um filme (El Camino: A Breaking Bad Movie).
+                </p>
+
+                <!-- Div com os Botões de Ação -->
+                <div class="botoes-acao">
+                    <button class="btn btn-assistir">
+                        <span class="icone">▶</span>
+                        <a href="https://youtu.be/XrVlzrRECY4">Assistir</a>
+                        
+                    </button>
+                    <button class="btn btn-info">
+                        <span class="icone">ℹ</span> Mais informações
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO DE CATÁLOGO (Carrossel / Lista de Séries) -->
+        <section class="secao-catalogo">
+            
+            <!-- Título H2 da Seção -->
+            <h2>Séries dos EUA</h2>
+
+            <!-- Div Container com todos os quadros (cards) de séries -->
+            <div class="cards-container">
+                
+                <!-- Card 1 -->
+                <article class="card-item">
+                    <div class="badge-top10">TOP 10</div>
+                    <div class="card-capa capa-1">
+                        <span class="titulo-capa">Breaking Bad</span>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-item">
+                    <div class="badge-top10">TOP 10</div>
+                    <div class="card-capa capa-2">
+                        <span class="titulo-capa">Monstro</span>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-item">
+                    <div class="card-capa capa-3">
+                        <span class="titulo-capa">Brooklyn 99</span>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card-item">
+                    <div class="card-capa capa-4">
+                        <span class="titulo-capa">Community</span>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card-item">
+                    <div class="card-capa capa-5">
+                        <span class="titulo-capa">Friends</span>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card-item">
+                    <div class="card-capa capa-6">
+                        <span class="titulo-capa">House</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DA PÁGINA (FOOTER) -->
+    <footer class="rodape">
+        <p>&copy; Netfrix - Página Principal (Exemplo para Aulas de HTML e CSS)</p>
+    </footer>
+
+</body>
+</html>
