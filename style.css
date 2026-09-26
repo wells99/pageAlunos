@@ -96,6 +96,11 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 }
+a {
+    text-decoration: none;
+	color: inherit;
+}
+
 
 /*Seção em Alta*/
 
@@ -176,4 +181,7 @@ body {
 .faq-item.active .icon {
 	transform: rotate(45eg);
 	transition: transform 0.3s;
+}
+#pCentralizado{
+	text-align: center;
 }
