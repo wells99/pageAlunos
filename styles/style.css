@@ -102,28 +102,47 @@ a {
 }
 
 
-/*Seção em Alta*/
+/* Seção em Alta */
 
 .trending {
-	padding: 40px 50px;
-	border-bottom: 8px solid #222;
+    padding: 40px 50px;
+    border-bottom: 8px solid #222;
 }
 
 .movie-list {
-	display: flex;
-	gap: 15px;
-	margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    overflow-x: auto; /* 'auto' é mais recomendado que 'scroll' para aparecer apenas quando necessário */
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Oculta no Firefox */
+	cursor: grab;
+}
+
+/* CORREÇÃO: Mudado de .carousel para .movie-list */
+.movie-list::-webkit-scrollbar {
+    height: 20px; /* Oculta no Chrome, Safari e Edge */
 }
 
 .movie-poster {
-	width: 200px;
-	border-radius: 5px;
-	transition: transform 0.3s;
+    width: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    flex-shrink: 0; /* IMPORTANTE: Impede que as imagens encolham se o container for menor */
+    scroll-snap-align: start;
 }
 
 .movie-poster:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
+.movie-list:active {
+	cursor: grabbing;
+}
+
+
+
+
 
 /*Seção de Perguntas Frequentes (FAQ)*/
 
@@ -185,3 +204,4 @@ a {
 #pCentralizado{
 	text-align: center;
 }
+
